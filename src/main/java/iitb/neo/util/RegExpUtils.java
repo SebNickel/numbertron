@@ -1,9 +1,9 @@
-package main.java.iitb.neo.util;
+package iitb.neo.util;
 
 import java.util.regex.Pattern;
 
 import edu.stanford.nlp.util.Pair;
-import edu.washington.multirframework.data.Argument;
+import org.mathison.multirframework.data.Argument;
 
 /**
  * A collection of common regexp util functions

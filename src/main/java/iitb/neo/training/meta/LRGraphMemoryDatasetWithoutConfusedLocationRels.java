@@ -1,4 +1,4 @@
-package main.java.iitb.neo.training.meta;
+package iitb.neo.training.meta;
 
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
@@ -9,8 +9,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 
-import edu.washington.multirframework.multiralgorithm.Dataset;
-import main.java.iitb.neo.training.ds.LRGraph;
+import org.mathison.multirframework.multiralgorithm.Dataset;
+import iitb.neo.training.ds.LRGraph;
 
 public class LRGraphMemoryDatasetWithoutConfusedLocationRels implements Dataset<LRGraph> {
 

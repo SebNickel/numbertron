@@ -1,4 +1,4 @@
-package main.java.iitb.neo.goldDB;
+package iitb.neo.goldDB;
 
 import java.io.BufferedReader;
 
@@ -7,8 +7,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import main.java.iitb.neo.training.algorithm.lpercp.GoldDbInference;
-import main.java.iitb.neo.training.ds.Number;
+import iitb.neo.training.algorithm.lpercp.GoldDbInference;
+import iitb.neo.training.ds.Number;
 
 /**
  * Iterates over the instances and removes those that are false according to the 

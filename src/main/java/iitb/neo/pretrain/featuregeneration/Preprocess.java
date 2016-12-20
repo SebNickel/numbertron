@@ -1,4 +1,4 @@
-package main.java.iitb.neo.pretrain.featuregeneration;
+package iitb.neo.pretrain.featuregeneration;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -14,11 +14,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import main.java.iitb.neo.NtronExperiment;
+import iitb.neo.NtronExperiment;
 
 import com.google.code.externalsorting.ExternalSort;
 
-import edu.washington.multirframework.multiralgorithm.Mappings;
+import org.mathison.multirframework.multiralgorithm.Mappings;
 
 /**
  * This main method takes the featuresTest and featuresTrain file and creates

@@ -1,5 +1,5 @@
-package main.java.iitb.neo.autoeval;
-
+package iitb.neo.autoeval;
+/*
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.Map;
 
-import main.java.iitb.neo.util.JsonUtils;
+import iitb.neo.util.JsonUtils;
 
 public class GeneratePRCurves {
 
@@ -60,3 +60,4 @@ public class GeneratePRCurves {
 		return (2 * p * r) / (p + r);
 	}
 }
+*/

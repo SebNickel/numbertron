@@ -1,4 +1,4 @@
-package main.java.iitb.neo.pretrain.featuregeneration;
+package iitb.neo.pretrain.featuregeneration;
 
 /**
  * Copy pasted the default feature generation code to modify get SAPs
@@ -24,12 +24,12 @@ import java.util.concurrent.ExecutionException;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
-import edu.washington.multirframework.corpus.Corpus;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification.SentGlobalIDInformation.SentGlobalID;
-import edu.washington.multirframework.featuregeneration.FeatureGeneration.SententialArgumentPair;
-import edu.washington.multirframework.featuregeneration.FeatureGenerator;
-import edu.washington.multirframework.util.BufferedIOUtils;
+import org.mathison.multirframework.corpus.Corpus;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification.SentGlobalIDInformation.SentGlobalID;
+import org.mathison.multirframework.featuregeneration.FeatureGeneration.SententialArgumentPair;
+import org.mathison.multirframework.featuregeneration.FeatureGenerator;
+import org.mathison.multirframework.util.BufferedIOUtils;
 
 public class NumbertronFeatureGenerationDriver {
 
@@ -70,7 +70,7 @@ public class NumbertronFeatureGenerationDriver {
 		// There can be several matchings in a sentence, collect them
 		Map<Integer, List<SententialArgumentPair>> sapMap = new HashMap<>();
 		for (SententialArgumentPair sap : saps) {
-			Integer id = sap.sentID;
+			Integer id = sap.getSentID();
 			if (sapMap.containsKey(id)) {
 				sapMap.get(id).add(sap);
 			} else {
@@ -146,28 +146,28 @@ public class NumbertronFeatureGenerationDriver {
 
 		// for a given sentential argument pair
 		for (SententialArgumentPair sap : currentSaps) {
-			BufferedWriter bw = writerMap.get(sap.partitionID);
+			BufferedWriter bw = writerMap.get(sap.getPartitionID());
 
 			// generate and write mintz features
 			if (useMintzKeywordsFeatures) {
-				List<String> features = mintzKeywordsFg.generateFeatures(sap.arg1Offsets.first, sap.arg1Offsets.second,
-						sap.arg2Offsets.first, sap.arg2Offsets.second, sap.arg1ID, sap.arg2ID, sentence, doc);
+				List<String> features = mintzKeywordsFg.generateFeatures(sap.getArg1Offsets().first, sap.getArg1Offsets().second,
+						sap.getArg2Offsets().first, sap.getArg2Offsets().second, sap.getArg1Id(), sap.getArg2Id(), sentence, doc);
 
 				bw.write(makeFeatureString(sap, features));
 			}
 
 			if(useKeywordFeatures){
 				//generate and write numeric features.
-				List<String> keywordFeatures = keywordsFg.generateFeatures(sap.arg1Offsets.first, sap.arg1Offsets.second,
-						sap.arg2Offsets.first, sap.arg2Offsets.second, sap.arg1ID, sap.arg2ID, sentence, doc);
+				List<String> keywordFeatures = keywordsFg.generateFeatures(sap.getArg1Offsets().first, sap.getArg1Offsets().second,
+						sap.getArg2Offsets().first, sap.getArg2Offsets().second, sap.getArg1Id(), sap.getArg2Id(), sentence, doc);
 				if(keywordFeatures.size() != 0)
 					bw.write("\t" + makeNumFeatureString(sap, keywordFeatures));
 			}
 			
 			if (useNumberFeatures) {
 				// generate and write numeric features
-				List<String> numFeatures = numbersFg.generateFeatures(sap.arg1Offsets.first, sap.arg1Offsets.second,
-						sap.arg2Offsets.first, sap.arg2Offsets.second, sap.arg1ID, sap.arg2ID, sentence, doc);
+				List<String> numFeatures = numbersFg.generateFeatures(sap.getArg1Offsets().first, sap.getArg1Offsets().second,
+						sap.getArg2Offsets().first, sap.getArg2Offsets().second, sap.getArg1Id(), sap.getArg2Id(), sentence, doc);
 
 				bw.write(FEATURE_TYPE_SEPARATOR + makeNumFeatureString(sap, numFeatures));
 			
@@ -219,7 +219,7 @@ public class NumbertronFeatureGenerationDriver {
 		Collections.sort(saps, new Comparator<SententialArgumentPair>() {
 			@Override
 			public int compare(SententialArgumentPair arg0, SententialArgumentPair arg1) {
-				return (arg0.sentID - arg1.sentID);
+				return (arg0.getSentID() - arg1.getSentID());
 			}
 
 		});

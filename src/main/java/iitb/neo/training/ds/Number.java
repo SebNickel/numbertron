@@ -1,4 +1,4 @@
-package main.java.iitb.neo.training.ds;
+package iitb.neo.training.ds;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

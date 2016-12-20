@@ -1,3 +1,5 @@
+.idea/
+*.iml
 *.pydevproject
 .metadata
 .gradle
@@ -44,4 +46,4 @@ data/*
 
 # TeXlipse plugin
 .texlipse
-/target
+target/

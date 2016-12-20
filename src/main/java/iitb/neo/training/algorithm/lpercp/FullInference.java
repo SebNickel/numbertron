@@ -1,4 +1,4 @@
-package main.java.iitb.neo.training.algorithm.lpercp;
+package iitb.neo.training.algorithm.lpercp;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,9 +9,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import main.java.iitb.neo.training.ds.LRGraph;
-import main.java.iitb.neo.util.MapUtils;
-import edu.washington.multirframework.multiralgorithm.Parameters;
+import iitb.neo.training.ds.LRGraph;
+import iitb.neo.util.MapUtils;
+import org.mathison.multirframework.multiralgorithm.Parameters;
 
 /**
  * Assigns a binary label to all the nodes given the current weights;

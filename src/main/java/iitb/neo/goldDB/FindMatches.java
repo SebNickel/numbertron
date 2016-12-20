@@ -1,4 +1,4 @@
-package main.java.iitb.neo.goldDB;
+package iitb.neo.goldDB;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import main.java.iitb.neo.training.algorithm.lpercp.GoldDbInference;
+import iitb.neo.training.algorithm.lpercp.GoldDbInference;
 
 public class FindMatches {
 

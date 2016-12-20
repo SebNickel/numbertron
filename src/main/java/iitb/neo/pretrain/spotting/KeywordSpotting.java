@@ -1,9 +1,9 @@
-package main.java.iitb.neo.pretrain.spotting;
+package iitb.neo.pretrain.spotting;
 
 import java.io.IOException;
 import java.sql.SQLException;
 
-import edu.washington.multirframework.corpus.Corpus;
+import org.mathison.multirframework.corpus.Corpus;
 
 public class KeywordSpotting extends Spotting {
 

@@ -1,4 +1,4 @@
-package main.java.iitb.neo.util;
+package iitb.neo.util;
 
 import iitb.rbased.meta.RelationMetadata;
 import iitb.rbased.util.Number;
@@ -12,8 +12,8 @@ import java.util.Set;
 import catalog.QuantityCatalog;
 import catalog.Unit;
 import edu.stanford.nlp.util.CoreMap;
-import edu.washington.multirframework.corpus.SentOffsetInformation.SentStartOffset;
-import edu.washington.multirframework.data.Argument;
+import org.mathison.multirframework.corpus.SentOffsetInformation.SentStartOffset;
+import org.mathison.multirframework.data.Argument;
 import eval.UnitExtractor;
 
 /**

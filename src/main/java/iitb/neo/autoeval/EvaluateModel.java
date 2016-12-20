@@ -1,16 +1,16 @@
-package main.java.iitb.neo.autoeval;
-
+package iitb.neo.autoeval;
+/*
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
-import main.java.iitb.neo.extract.NumbertronExtractFromCorpus;
-import main.java.iitb.neo.util.JsonUtils;
+import iitb.neo.extract.NumbertronExtractFromCorpus;
+import iitb.neo.util.JsonUtils;
 import edu.washington.multir.extractor.MultirExtractFromCorpus;
 import edu.washington.multirframework.data.Extraction;
-
+*/
 /**
  * Evalaute a model specified by the json file, calculate the precision recall
  * score
@@ -18,6 +18,7 @@ import edu.washington.multirframework.data.Extraction;
  * @author aman
  * 
  */
+/*
 public class EvaluateModel {
 
 	MultirExtractFromCorpus efc; //returns the extractions given a model
@@ -88,3 +89,4 @@ public class EvaluateModel {
 	}
 
 }
+*/

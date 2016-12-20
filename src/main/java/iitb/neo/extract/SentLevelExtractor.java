@@ -1,4 +1,4 @@
-package main.java.iitb.neo.extract;
+package iitb.neo.extract;
 
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -8,25 +8,25 @@ import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-import main.java.iitb.neo.training.algorithm.lpercp.FullInference;
-import main.java.iitb.neo.training.algorithm.lpercp.Scorer;
-import main.java.iitb.neo.training.ds.LRGraph;
-import main.java.iitb.neo.util.UnitsUtils;
+import iitb.neo.training.algorithm.lpercp.FullInference;
+import iitb.neo.training.algorithm.lpercp.Scorer;
+import iitb.neo.training.ds.LRGraph;
+import iitb.neo.util.UnitsUtils;
 
 import org.apache.commons.lang.NotImplementedException;
 
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
-import edu.washington.multirframework.data.Argument;
-import edu.washington.multirframework.data.KBArgument;
-import edu.washington.multirframework.featuregeneration.FeatureGenerator;
-import edu.washington.multirframework.multiralgorithm.DenseVector;
-import edu.washington.multirframework.multiralgorithm.Mappings;
-import edu.washington.multirframework.multiralgorithm.Model;
-import edu.washington.multirframework.multiralgorithm.Parameters;
-import edu.washington.multirframework.multiralgorithm.SparseBinaryVector;
-import edu.washington.multirframework.util.ModelUtils;
+import org.mathison.multirframework.data.Argument;
+import org.mathison.multirframework.data.KBArgument;
+import org.mathison.multirframework.featuregeneration.FeatureGenerator;
+import org.mathison.multirframework.multiralgorithm.DenseVector;
+import org.mathison.multirframework.multiralgorithm.Mappings;
+import org.mathison.multirframework.multiralgorithm.Model;
+import org.mathison.multirframework.multiralgorithm.Parameters;
+import org.mathison.multirframework.multiralgorithm.SparseBinaryVector;
+import org.mathison.multirframework.util.ModelUtils;
 
 /**
  * Accepts a feature vector and returns a list of possible relations sorted by

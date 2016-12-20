@@ -1,4 +1,4 @@
-package main.java.iitb.neo.goldDB;
+package iitb.neo.goldDB;
 
 import java.util.ArrayList;
 import java.util.HashSet;

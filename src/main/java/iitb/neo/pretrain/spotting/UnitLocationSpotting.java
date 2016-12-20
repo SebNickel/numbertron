@@ -2,7 +2,7 @@
 /**
  * An attempt at integrating rule based system with multir
  */
-package main.java.iitb.neo.pretrain.spotting;
+package iitb.neo.pretrain.spotting;
 
 import iitb.rbased.main.RuleBasedDriver;
 import iitb.rbased.util.Number;
@@ -26,14 +26,14 @@ import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.util.Triple;
-import edu.washington.multirframework.corpus.Corpus;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification.SentGlobalIDInformation.SentGlobalID;
-import edu.washington.multirframework.corpus.SentDependencyInformation;
-import edu.washington.multirframework.corpus.TokenOffsetInformation.SentenceRelativeCharacterOffsetBeginAnnotation;
-import edu.washington.multirframework.corpus.TokenOffsetInformation.SentenceRelativeCharacterOffsetEndAnnotation;
-import edu.washington.multirframework.data.Argument;
-import edu.washington.multirframework.data.KBArgument;
+import org.mathison.multirframework.corpus.Corpus;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification.SentGlobalIDInformation.SentGlobalID;
+import org.mathison.multirframework.corpus.SentDependencyInformation;
+import org.mathison.multirframework.corpus.TokenOffsetInformation.SentenceRelativeCharacterOffsetBeginAnnotation;
+import org.mathison.multirframework.corpus.TokenOffsetInformation.SentenceRelativeCharacterOffsetEndAnnotation;
+import org.mathison.multirframework.data.Argument;
+import org.mathison.multirframework.data.KBArgument;
 
 public class UnitLocationSpotting extends Spotting {
 	String corpusPath;

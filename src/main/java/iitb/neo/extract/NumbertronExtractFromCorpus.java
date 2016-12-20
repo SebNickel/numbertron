@@ -1,4 +1,4 @@
-package main.java.iitb.neo.extract;
+package iitb.neo.extract;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -12,25 +12,25 @@ import java.util.Map;
 
 import org.apache.commons.lang.NotImplementedException;
 
-import main.java.iitb.neo.util.JsonUtils;
-import main.java.iitb.neo.util.MapUtils;
-import main.java.iitb.neo.util.RegExpUtils;
-import main.java.iitb.neo.util.UnitsUtils;
+import iitb.neo.util.JsonUtils;
+import iitb.neo.util.MapUtils;
+import iitb.neo.util.RegExpUtils;
+import iitb.neo.util.UnitsUtils;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Pair;
-import edu.washington.multirframework.argumentidentification.ArgumentIdentification;
-import edu.washington.multirframework.argumentidentification.SententialInstanceGeneration;
-import edu.washington.multirframework.corpus.Corpus;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification.SentDocNameInformation.SentDocName;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification.SentGlobalIDInformation.SentGlobalID;
-import edu.washington.multirframework.corpus.CustomCorpusInformationSpecification;
-import edu.washington.multirframework.corpus.SentOffsetInformation.SentStartOffset;
-import edu.washington.multirframework.data.Argument;
-import edu.washington.multirframework.data.Extraction;
-import edu.washington.multirframework.featuregeneration.FeatureGenerator;
+import org.mathison.multirframework.argumentidentification.ArgumentIdentification;
+import org.mathison.multirframework.argumentidentification.SententialInstanceGeneration;
+import org.mathison.multirframework.corpus.Corpus;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification.SentDocNameInformation.SentDocName;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification.SentGlobalIDInformation.SentGlobalID;
+import org.mathison.multirframework.corpus.CustomCorpusInformationSpecification;
+import org.mathison.multirframework.corpus.SentOffsetInformation.SentStartOffset;
+import org.mathison.multirframework.data.Argument;
+import org.mathison.multirframework.data.Extraction;
+import org.mathison.multirframework.featuregeneration.FeatureGenerator;
 
 /**
  **Extract from corpus derived from a similar method used in multir, heavily modded to suit our needs

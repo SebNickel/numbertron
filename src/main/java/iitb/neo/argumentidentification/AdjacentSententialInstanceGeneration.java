@@ -1,4 +1,4 @@
-package main.java.iitb.neo.argumentidentification;
+package iitb.neo.argumentidentification;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,8 +8,8 @@ import java.util.List;
 
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Pair;
-import edu.washington.multirframework.argumentidentification.SententialInstanceGeneration;
-import edu.washington.multirframework.data.Argument;
+import org.mathison.multirframework.argumentidentification.SententialInstanceGeneration;
+import org.mathison.multirframework.data.Argument;
 
 /**
  * Returns the sentential instances that are adjacent to each other. Arg1 - Arg2

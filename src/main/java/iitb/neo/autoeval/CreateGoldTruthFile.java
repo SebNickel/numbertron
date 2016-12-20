@@ -1,4 +1,4 @@
-package main.java.iitb.neo.autoeval;
+package iitb.neo.autoeval;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
@@ -11,22 +11,22 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import main.java.iitb.neo.util.JsonUtils;
-import main.java.iitb.neo.util.RegExpUtils;
-import main.java.iitb.neo.util.UnitsUtils;
+import iitb.neo.util.JsonUtils;
+import iitb.neo.util.RegExpUtils;
+import iitb.neo.util.UnitsUtils;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
 import edu.stanford.nlp.util.Pair;
-import edu.washington.multirframework.argumentidentification.ArgumentIdentification;
-import edu.washington.multirframework.argumentidentification.SententialInstanceGeneration;
-import edu.washington.multirframework.corpus.Corpus;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification.SentDocNameInformation.SentDocName;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification.SentGlobalIDInformation.SentGlobalID;
-import edu.washington.multirframework.corpus.CustomCorpusInformationSpecification;
-import edu.washington.multirframework.data.Argument;
-import edu.washington.multirframework.data.Extraction;
+import org.mathison.multirframework.argumentidentification.ArgumentIdentification;
+import org.mathison.multirframework.argumentidentification.SententialInstanceGeneration;
+import org.mathison.multirframework.corpus.Corpus;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification.SentDocNameInformation.SentDocName;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification.SentGlobalIDInformation.SentGlobalID;
+import org.mathison.multirframework.corpus.CustomCorpusInformationSpecification;
+import org.mathison.multirframework.data.Argument;
+import org.mathison.multirframework.data.Extraction;
 
 /**
  * This class creates a gold test set to be fed to an automatic evaluator
@@ -111,7 +111,7 @@ public class CreateGoldTruthFile {
 						for (String compatibleRel : compatibleRels) {
 							Extraction e = new Extraction(p.first, p.second, docName, compatibleRel, sentNum, 0.0,
 									senText);
-							bw.write(main.java.iitb.neo.extract.NumbertronExtractFromCorpus.formatExtractionStringOriginalOffset(c, e) + "\n");
+							bw.write(iitb.neo.extract.NumbertronExtractFromCorpus.formatExtractionStringOriginalOffset(c, e) + "\n");
 							extrs.add(e);
 						}
 					}

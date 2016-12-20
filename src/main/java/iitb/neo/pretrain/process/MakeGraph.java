@@ -1,4 +1,4 @@
-package main.java.iitb.neo.pretrain.process;
+package iitb.neo.pretrain.process;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -14,14 +14,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
-import main.java.iitb.neo.pretrain.featuregeneration.NumbertronFeatureGenerationDriver;
-import main.java.iitb.neo.pretrain.featuregeneration.Preprocess;
-import main.java.iitb.neo.training.ds.LRGraph;
-import main.java.iitb.neo.training.ds.Number;
+import iitb.neo.pretrain.featuregeneration.NumbertronFeatureGenerationDriver;
+import iitb.neo.pretrain.featuregeneration.Preprocess;
+import iitb.neo.training.ds.LRGraph;
+import iitb.neo.training.ds.Number;
 import edu.stanford.nlp.ie.pascal.AcronymModel.Feature;
-import edu.washington.multirframework.multiralgorithm.Mappings;
-import edu.washington.multirframework.multiralgorithm.Model;
-import edu.washington.multirframework.multiralgorithm.SparseBinaryVector;
+import org.mathison.multirframework.multiralgorithm.Mappings;
+import org.mathison.multirframework.multiralgorithm.Model;
+import org.mathison.multirframework.multiralgorithm.SparseBinaryVector;
 
 /**
  * This class assumes that the features have been created and then uses the

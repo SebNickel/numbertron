@@ -1,6 +1,6 @@
-package main.java.iitb.neo.util;
+package iitb.neo.util;
 
-import main.java.org.tartarus.snowball.SnowballStemmer;
+import org.tartarus.snowball.SnowballStemmer;
 
 public class StemUtils {
 	public static SnowballStemmer stemmer = null;

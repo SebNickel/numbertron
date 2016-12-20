@@ -1,4 +1,4 @@
-package main.java.iitb.neo.util;
+package iitb.neo.util;
 
 import java.util.LinkedList;
 import java.util.List;

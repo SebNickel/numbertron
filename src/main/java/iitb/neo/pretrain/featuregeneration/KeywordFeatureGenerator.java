@@ -1,15 +1,15 @@
-	package main.java.iitb.neo.pretrain.featuregeneration;
+package iitb.neo.pretrain.featuregeneration;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-import main.java.iitb.neo.util.StemUtils;
+import iitb.neo.util.StemUtils;
 import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
-import edu.washington.multirframework.featuregeneration.FeatureGenerator;
+import org.mathison.multirframework.featuregeneration.FeatureGenerator;
 
 /**
  * @author ashishm

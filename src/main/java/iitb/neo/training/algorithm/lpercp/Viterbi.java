@@ -1,7 +1,7 @@
-package main.java.iitb.neo.training.algorithm.lpercp;
+package iitb.neo.training.algorithm.lpercp;
 
-import main.java.iitb.neo.training.ds.LRGraph;
-import edu.washington.multirframework.multiralgorithm.Model;
+import iitb.neo.training.ds.LRGraph;
+import org.mathison.multirframework.multiralgorithm.Model;
 
 public class Viterbi {
 	private Scorer parseScorer;

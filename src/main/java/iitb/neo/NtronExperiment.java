@@ -2,7 +2,7 @@
 /**
  * An attempt at integrating rule based system with multir
  */
-package main.java.iitb.neo;
+package iitb.neo;
 
 import iitb.rbased.main.RuleBasedDriver;
 
@@ -21,27 +21,27 @@ import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.ExecutionException;
 
-import main.java.iitb.neo.goldDB.GoldDB;
-import main.java.iitb.neo.pretrain.featuregeneration.NumbertronFeatureGenerationDriver;
-import main.java.iitb.neo.pretrain.process.MakeGraph;
-import main.java.iitb.neo.pretrain.spotting.UnitLocationSpotting;
-import main.java.iitb.neo.training.algorithm.lpercp.GoldDbInference;
-import main.java.iitb.neo.training.algorithm.lpercp.LperceptTrain;
-import main.java.iitb.neo.training.ds.LRGraph;
-import main.java.iitb.neo.training.meta.LRGraphMemoryDataset;
-import main.java.iitb.neo.util.JsonUtils;
-import edu.washington.multirframework.argumentidentification.SententialInstanceGeneration;
-import edu.washington.multirframework.corpus.Corpus;
-import edu.washington.multirframework.corpus.CorpusInformationSpecification;
-import edu.washington.multirframework.corpus.CustomCorpusInformationSpecification;
-import edu.washington.multirframework.corpus.DocumentInformationI;
-import edu.washington.multirframework.corpus.SentInformationI;
-import edu.washington.multirframework.corpus.TokenInformationI;
-import edu.washington.multirframework.featuregeneration.FeatureGenerator;
-import edu.washington.multirframework.multiralgorithm.Dataset;
-import edu.washington.multirframework.multiralgorithm.DenseVector;
-import edu.washington.multirframework.multiralgorithm.Model;
-import edu.washington.multirframework.multiralgorithm.Parameters;
+import iitb.neo.goldDB.GoldDB;
+import iitb.neo.pretrain.featuregeneration.NumbertronFeatureGenerationDriver;
+import iitb.neo.pretrain.process.MakeGraph;
+import iitb.neo.pretrain.spotting.UnitLocationSpotting;
+import iitb.neo.training.algorithm.lpercp.GoldDbInference;
+import iitb.neo.training.algorithm.lpercp.LperceptTrain;
+import iitb.neo.training.ds.LRGraph;
+import iitb.neo.training.meta.LRGraphMemoryDataset;
+import iitb.neo.util.JsonUtils;
+import org.mathison.multirframework.argumentidentification.SententialInstanceGeneration;
+import org.mathison.multirframework.corpus.Corpus;
+import org.mathison.multirframework.corpus.CorpusInformationSpecification;
+import org.mathison.multirframework.corpus.CustomCorpusInformationSpecification;
+import org.mathison.multirframework.corpus.DocumentInformationI;
+import org.mathison.multirframework.corpus.SentInformationI;
+import org.mathison.multirframework.corpus.TokenInformationI;
+import org.mathison.multirframework.featuregeneration.FeatureGenerator;
+import org.mathison.multirframework.multiralgorithm.Dataset;
+import org.mathison.multirframework.multiralgorithm.DenseVector;
+import org.mathison.multirframework.multiralgorithm.Model;
+import org.mathison.multirframework.multiralgorithm.Parameters;
 
 public class NtronExperiment {
 	private String corpusPath;

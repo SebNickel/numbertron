@@ -1,6 +1,6 @@
-package main.java.iitb.neo.training.algorithm.lpercp;
+package iitb.neo.training.algorithm.lpercp;
 
-import main.java.iitb.neo.training.ds.LRGraph;
+import iitb.neo.training.ds.LRGraph;
 
 /**
  * Stores the states of the variables, to be used during training

@@ -1,10 +1,10 @@
-package main.java.iitb.neo.training.algorithm.lpercp;
+package iitb.neo.training.algorithm.lpercp;
 
 import java.util.ArrayList;
 
-import main.java.iitb.neo.training.ds.LRGraph;
-import main.java.iitb.neo.training.ds.Number;
-import edu.washington.multirframework.multiralgorithm.Parameters;
+import iitb.neo.training.ds.LRGraph;
+import iitb.neo.training.ds.Number;
+import org.mathison.multirframework.multiralgorithm.Parameters;
 
 
 

@@ -1,4 +1,4 @@
-package main.java.iitb.neo.training.algorithm.lpercp;
+package iitb.neo.training.algorithm.lpercp;
 
 import iitb.rbased.util.Pair;
 
@@ -7,10 +7,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import main.java.iitb.neo.goldDB.GoldDB;
-import main.java.iitb.neo.training.ds.LRGraph;
-import main.java.iitb.neo.util.RandomUtils;
-import main.java.iitb.neo.training.ds.Number;
+import iitb.neo.goldDB.GoldDB;
+import iitb.neo.training.ds.LRGraph;
+import iitb.neo.util.RandomUtils;
+import iitb.neo.training.ds.Number;
 
 /**
  * Sets the value of n nodes based on the value pulled from the gold db

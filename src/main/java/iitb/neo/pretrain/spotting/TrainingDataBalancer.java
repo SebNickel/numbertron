@@ -1,4 +1,4 @@
-package main.java.iitb.neo.pretrain.spotting;
+package iitb.neo.pretrain.spotting;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-import edu.washington.multirframework.multiralgorithm.MILDocument;
-import main.java.iitb.neo.goldDB.GoldDB;
-import main.java.iitb.neo.training.algorithm.lpercp.GoldDbInference;
+import org.mathison.multirframework.multiralgorithm.MILDocument;
+import iitb.neo.goldDB.GoldDB;
+import iitb.neo.training.algorithm.lpercp.GoldDbInference;
 
 public class TrainingDataBalancer {
 
@@ -48,7 +48,7 @@ public class TrainingDataBalancer {
 			String relString = instanceLineSplit[9];
 			// int sentid = Integer.parseInt(instanceLineSplit[8]);
 			String countryId = instanceLineSplit[0];
-			double closeEnough = GoldDbInference.closeEnough(value, relString,
+			boolean closeEnough = GoldDbInference.closeEnough(value, relString,
 					countryId, 0.5);
 			if (generateStats) {
 				if (closeEnough) {

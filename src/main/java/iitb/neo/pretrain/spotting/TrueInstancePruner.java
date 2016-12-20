@@ -1,4 +1,4 @@
-package main.java.iitb.neo.pretrain.spotting;
+package iitb.neo.pretrain.spotting;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
-import edu.washington.multirframework.multiralgorithm.MILDocument;
-import main.java.iitb.neo.goldDB.GoldDB;
-import main.java.iitb.neo.training.algorithm.lpercp.GoldDbInference;
+import org.mathison.multirframework.multiralgorithm.MILDocument;
+import iitb.neo.goldDB.GoldDB;
+import iitb.neo.training.algorithm.lpercp.GoldDbInference;
 
 public class TrueInstancePruner {
 

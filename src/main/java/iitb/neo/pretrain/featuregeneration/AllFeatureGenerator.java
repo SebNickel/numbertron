@@ -1,11 +1,11 @@
-package main.java.iitb.neo.pretrain.featuregeneration;
+package iitb.neo.pretrain.featuregeneration;
 
 import java.util.List;
 
 import edu.stanford.nlp.ie.pascal.AcronymModel.Feature;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.util.CoreMap;
-import edu.washington.multirframework.featuregeneration.FeatureGenerator;
+import org.mathison.multirframework.featuregeneration.FeatureGenerator;
 
 public class AllFeatureGenerator implements FeatureGenerator {
 

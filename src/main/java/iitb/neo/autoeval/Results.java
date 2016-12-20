@@ -1,4 +1,4 @@
-package main.java.iitb.neo.autoeval;
+package iitb.neo.autoeval;
 
 import iitb.rbased.meta.RelationMetadata;
 
@@ -10,8 +10,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
-import edu.washington.multirframework.data.Argument;
-import edu.washington.multirframework.data.Extraction;
+import org.mathison.multirframework.data.Argument;
+import org.mathison.multirframework.data.Extraction;
 
 
 class Results {

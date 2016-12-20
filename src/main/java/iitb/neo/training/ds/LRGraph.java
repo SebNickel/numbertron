@@ -1,4 +1,4 @@
-package main.java.iitb.neo.training.ds;
+package iitb.neo.training.ds;
 /**
  * Represents the Location Relation Graph
  * @author aman
@@ -14,7 +14,8 @@ import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import edu.washington.multirframework.multiralgorithm.SparseBinaryVector;
+import org.mathison.multirframework.multiralgorithm.MILDocument;
+import org.mathison.multirframework.multiralgorithm.SparseBinaryVector;
 
 
 
@@ -29,7 +30,7 @@ import edu.washington.multirframework.multiralgorithm.SparseBinaryVector;
  * TODO: Move the list of Z nodes connected to a number node to the 
  * SparseBinaryRepresentation
  */
-public class LRGraph {
+public class LRGraph extends MILDocument {
 	public static final int MNT_CAPACITY = 1;
 	public static final int NUM_RELS = 11;
 	public String location, relation;

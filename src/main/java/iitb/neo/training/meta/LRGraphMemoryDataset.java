@@ -1,4 +1,4 @@
-package main.java.iitb.neo.training.meta;
+package iitb.neo.training.meta;
 
 import java.io.BufferedInputStream;
 import java.io.DataInputStream;
@@ -8,9 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import main.java.iitb.neo.training.ds.LRGraph;
-import edu.washington.multirframework.multiralgorithm.Dataset;
+import org.mathison.multirframework.multiralgorithm.MILDocument;
+import iitb.neo.training.ds.LRGraph;
+import org.mathison.multirframework.multiralgorithm.Dataset;
 
+// Apparently they want a generic Dataset interface with type variable T,
+// and where the signature of `next` is `public boolean new(T doc)` instead of `public boolean next(MILDocument doc)`.
 public class LRGraphMemoryDataset implements Dataset<LRGraph> {
 
 	private LRGraph[] docs;

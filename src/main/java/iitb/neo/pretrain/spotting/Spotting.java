@@ -2,7 +2,7 @@
 /**
  * An attempt at integrating rule based system with multir
  */
-package main.java.iitb.neo.pretrain.spotting;
+package iitb.neo.pretrain.spotting;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -11,8 +11,8 @@ import java.util.List;
 
 import edu.stanford.nlp.util.Pair;
 import edu.stanford.nlp.util.Triple;
-import edu.washington.multirframework.corpus.Corpus;
-import edu.washington.multirframework.data.KBArgument;
+import org.mathison.multirframework.corpus.Corpus;
+import org.mathison.multirframework.data.KBArgument;
 
 public abstract class Spotting {
 	

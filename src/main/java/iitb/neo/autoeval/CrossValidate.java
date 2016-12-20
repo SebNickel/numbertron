@@ -1,16 +1,16 @@
 /**
  * 
  */
-package main.java.iitb.neo.autoeval;
-
+package iitb.neo.autoeval;
+/*
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.Map;
 
-import main.java.iitb.neo.NtronExperiment;
-import main.java.iitb.neo.extract.NumbertronExtractFromCorpus;
-import main.java.iitb.neo.util.JsonUtils;
-
+import iitb.neo.NtronExperiment;
+import iitb.neo.extract.NumbertronExtractFromCorpus;
+import iitb.neo.util.JsonUtils;
+*/
 /**
  * Searches over a grid of hyperparameters to find the ones that perform the
  * best over the cross validation set
@@ -18,6 +18,7 @@ import main.java.iitb.neo.util.JsonUtils;
  * @author aman
  * 
  */
+/*
 public class CrossValidate {
 	static class CVParams {
 		public static final int 
@@ -111,3 +112,4 @@ public class CrossValidate {
 	}
 
 }
+*/

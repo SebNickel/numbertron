@@ -1,4 +1,5 @@
-package main.java.iitb.neo.goldDB;
+package iitb.neo.goldDB;
+
 import iitb.rbased.meta.RelationMetadata;
 import iitb.rbased.util.Pair;
 

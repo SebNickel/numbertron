@@ -1,4 +1,4 @@
-package main.java.iitb.neo.training.algorithm.lpercp;
+package iitb.neo.training.algorithm.lpercp;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,12 +8,12 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Random;
 
-import main.java.iitb.neo.training.ds.LRGraph;
-import edu.washington.multirframework.multiralgorithm.Dataset;
-import edu.washington.multirframework.multiralgorithm.DenseVector;
-import edu.washington.multirframework.multiralgorithm.Model;
-import edu.washington.multirframework.multiralgorithm.Parameters;
-import edu.washington.multirframework.multiralgorithm.SparseBinaryVector;
+import iitb.neo.training.ds.LRGraph;
+import org.mathison.multirframework.multiralgorithm.Dataset;
+import org.mathison.multirframework.multiralgorithm.DenseVector;
+import org.mathison.multirframework.multiralgorithm.Model;
+import org.mathison.multirframework.multiralgorithm.Parameters;
+import org.mathison.multirframework.multiralgorithm.SparseBinaryVector;
 
 /**
  * Simple percepton-ish algorithm for learning weights. Averaged because the

@@ -1,4 +1,4 @@
-package main.java.iitb.neo.autoeval;
+package iitb.neo.autoeval;
 
 import iitb.rbased.meta.KeywordData;
 
@@ -8,9 +8,9 @@ import java.io.IOException;
 import java.util.HashSet;
 import java.util.List;
 
-import main.java.iitb.neo.goldDB.GoldDB;
-import main.java.iitb.neo.training.algorithm.lpercp.GoldDbInference;
-import main.java.iitb.neo.util.StemUtils;
+import iitb.neo.goldDB.GoldDB;
+import iitb.neo.training.algorithm.lpercp.GoldDbInference;
+import iitb.neo.util.StemUtils;
 
 /**
  * This class takes as input an instance file and for each instance, assigns a

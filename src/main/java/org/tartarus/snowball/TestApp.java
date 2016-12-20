@@ -1,5 +1,5 @@
 
-package main.java.org.tartarus.snowball;
+package org.tartarus.snowball;
 
 import java.lang.reflect.Method;
 import java.io.Reader;

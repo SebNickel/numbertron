@@ -1,4 +1,4 @@
-package main.java.iitb.neo.training.algorithm.lpercp;
+package iitb.neo.training.algorithm.lpercp;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,17 +6,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import main.java.iitb.neo.training.ds.LRGraph;
-import main.java.iitb.neo.training.meta.LRGraphMemoryDataset;
-import main.java.iitb.neo.training.meta.LRGraphMemoryDatasetWithoutConfusedLocationRels;
+import iitb.neo.training.ds.LRGraph;
+import iitb.neo.training.meta.LRGraphMemoryDataset;
+import iitb.neo.training.meta.LRGraphMemoryDatasetWithoutConfusedLocationRels;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.NotImplementedException;
 
 
-import edu.washington.multirframework.multiralgorithm.Dataset;
-import edu.washington.multirframework.multiralgorithm.Model;
-import edu.washington.multirframework.multiralgorithm.Parameters;
+import org.mathison.multirframework.multiralgorithm.Dataset;
+import org.mathison.multirframework.multiralgorithm.Model;
+import org.mathison.multirframework.multiralgorithm.Parameters;
 
 /**
  * Driver for the local percepton perceptron algorithm
@@ -41,7 +41,9 @@ public class LperceptTrain {
 		}
 
 		System.out.println("starting training with regularizer = " + regularizer + ", iterations = " + numIterations + ", finalAvg = " + finalAvg + ", ignoreConfusion = " + ignoreConfusion);
-		
+
+		//The following is not used in NtronExperiments, and it breaks the code because the MakeAverageModel class does not exist.
+		/*
 		if(numberOfAverages != 1){
 			List<File> randomModelFiles = new ArrayList<File>();
 			for(int avgIter = 0; avgIter < numberOfAverages; avgIter++){
@@ -65,14 +67,14 @@ public class LperceptTrain {
 			}
 			MakeAverageModel.run(randomModelFiles,new File(dir));
 		}
-		else{
+		else{ */
 			long start = System.currentTimeMillis();
 			Parameters params = lpton.train(train);
 			long end = System.currentTimeMillis();
 			System.out.println("training time " + (end-start)/1000.0 + " seconds");
 	
 			params.serialize(dir + File.separatorChar + "params");
-		}
+		//}
 	}
 	
 	public static void train(String dir) throws IOException {
